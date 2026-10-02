@@ -2054,18 +2054,5 @@ section.seen-on{
 })();
 </script>
 
-<script>
-(function(){
-  var incoming=new URLSearchParams(window.location.search);
-  if(!incoming.toString()) return;
-  document.querySelectorAll('a[href*="horsejello.com/cc2/pay/checkout.php"]').forEach(function(a){
-    try{
-      var u=new URL(a.href);
-      incoming.forEach(function(v,k){ if(!u.searchParams.has(k)) u.searchParams.append(k,v); });
-      a.href=u.toString();
-    }catch(e){}
-  });
-})();
-</script>
 </body>
 </html>
