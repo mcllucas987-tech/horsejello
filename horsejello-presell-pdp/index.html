@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Horse Jello® | Age Verification</title>
+<meta name="robots" content="noindex,follow">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}html,body{min-height:100%;background:#0c0c0c;color:#fff;font-family:Arial,Helvetica,sans-serif}body{min-height:100vh;display:grid;place-items:center;padding:24px}.gate{width:min(620px,100%);text-align:center}.brand{font-weight:900;font-size:clamp(28px,6vw,48px);letter-spacing:.04em;margin-bottom:28px}.brand span{color:#B4FF3A}.mark{width:92px;height:92px;margin:0 auto 28px;border:2px solid #B4FF3A;border-radius:50%;display:grid;place-items:center;font-size:44px;box-shadow:0 0 42px rgba(180,255,58,.18)}h1{font-size:clamp(32px,7vw,58px);line-height:1.05;margin-bottom:14px}p{color:rgba(255,255,255,.7);font-size:16px;line-height:1.55;margin:0 auto 28px;max-width:500px}.yes{display:flex;align-items:center;justify-content:center;width:min(390px,100%);min-height:64px;margin:0 auto;background:linear-gradient(180deg,#C4FF5C,#B4FF3A 52%,#8FD91F);color:#0c0c0c;text-decoration:none;font-size:19px;font-weight:900;letter-spacing:.06em;text-transform:uppercase;border-radius:6px;box-shadow:0 12px 38px rgba(143,217,31,.32);transition:.2s}.yes:hover{transform:translateY(-2px);box-shadow:0 16px 46px rgba(180,255,58,.44)}.legal{font-size:12px;color:rgba(255,255,255,.45);margin-top:18px}.line{width:64px;height:2px;background:#B4FF3A;margin:0 auto 26px}
+</style>
+<script src="https://cdn.nlabs.cloud/assets/main/js/trackcontrol.min.js" defer></script>
+<script src="https://cdn.nlabs.cloud/assets/main/js/affiliate-trackcontrol.min.js" defer></script>
+<script src="https://cdn.nlabs.cloud/assets/main/js/everflow.min.js" defer></script>
+</head>
+<body class="cc" data-funnel="homefunnel">
+<main class="gate">
+<div class="brand">HORSE <span>JELLO®</span></div>
+<div class="mark" aria-hidden="true">♞</div>
+<div class="line"></div>
+<h1>Are you over 21 years old?</h1>
+<p>Horse Jello® content is intended for adults. Confirm your age to continue to the official product page.</p>
+<a id="continue" class="yes" href="./pdp/">Yes, Continue</a>
+<div class="legal">By continuing, you confirm that you are 21 years of age or older.</div>
+</main>
+<script>
+(function(){
+  var link=document.getElementById('continue');
+  var params=window.location.search;
+  if(params) link.href='./pdp/'+params;
+})();
+</script>
+</body>
+</html>
